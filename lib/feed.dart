@@ -20,6 +20,7 @@ class _FeedState extends State<Feed> {
   Widget build(context){
     return SingleChildScrollView(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           ...fixedList.map((item){
             FeedStructure val = feed[item];

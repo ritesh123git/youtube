@@ -9,7 +9,8 @@ class CategoryButton extends StatelessWidget {
     return OutlinedButton(
         onPressed: () {},
         style: OutlinedButton.styleFrom(
-          backgroundColor:  Colors.black54,
+          backgroundColor:  Colors.white10,
+          shape: RoundedRectangleBorder( borderRadius: BorderRadius.circular(10)),
         ),
         child: Text(
           catname,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:youtube/bottom_nav.dart';
 import 'package:youtube/home_page_elements/categories.dart';
 
 import 'feed.dart';
@@ -17,16 +18,17 @@ class _HomePage extends State<HomePage> {
   Widget build(context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.black,
         appBar: AppBar(
           backgroundColor: Colors.black,
           leading: Image.asset(
-            "assets/img.png",
-            fit: BoxFit.fill,
+            "assets/yt_logo.png",
+            fit: BoxFit.contain,
           ),
           title: Flexible(
             child: Text(
               "YouTube",
-              style: GoogleFonts.roboto(
+              style: GoogleFonts.gothicA1(
                   fontWeight: FontWeight.bold, fontSize: 24, color: Colors.white),
             ),
           ),
@@ -40,6 +42,7 @@ class _HomePage extends State<HomePage> {
             ],
           ),
         ),
+        bottomNavigationBar: const BottomNavigation(),
       ),
     );
   }
